@@ -1,0 +1,110 @@
+﻿@{
+    <title>@ViewData["Title"] - final</title>
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="~/css/jobs.css" />
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <py-config>
+        packages = ["numpy","matplotlib", "pandas", "seaborn"]
+    </py-config>
+    <py-script>
+        import pandas as pd
+        import numpy as np
+        import matplotlib.pyplot as plt
+        import matplotlib.pyplot as plt2
+        import seaborn as sns
+        from pyodide.http import open_url
+
+        url = open_url("../csv/salaries2023.csv")
+        df = pd.read_csv(url)
+        display(df.head(n=7), target="table", append=False)
+
+
+        
+
+        top_jobs = df.job_title.value_counts()[: 7]
+        m = df.shape[0]
+        job_distribution = top_jobs*100/m
+        job_distribution.plot(kind = 'pie', autopct = '%1.0f%%', figsize = (18, 10))
+        plt.title('Job distribution among top 10 in demand job title')
+        display(plt, target="pie", append=False)
+
+        plt.figure(figsize=(12, 6))
+        sns.barplot(x = 'work_year', y = 'salary_in_usd', data = df)
+        plt.title("Salaries")
+        display(plt, target="output", append=False)
+
+
+
+
+        
+
+
+
+    </py-script>
+
+   
+   
+    <div id="header">
+        <h1>AI jobs</h1>
+        <p>
+            AI Job dataset: <a href="https://ai-jobs.net/">Insights AI-Jobs</a><br />
+            Python source for tables and charts: <a href="https://www.kaggle.com/code/sowrabhghosh/data-science-salary-2020-22-analysis">Kaggle</a>
+        </p>
+    </div>
+    
+    
+    <div id="content">
+        <div class="section">
+            <div class="small-section2">
+                <h2 class="myimage">Top 5 <br /> companies</h2>
+                <p >according to number of <br />employees</p>
+            </div>
+            <div class="big-section2" id="table">
+                
+            </div>
+        </div>
+        <hr style="color:gold;height:5px;"/>
+
+        <div class="section">
+            <div class="small-section1">
+                <h2 class="myimage">Job<br />distriution</h2>
+                <p >among top 10 in demand <br />job title</p>
+            </div>
+            <div class="big-section1">
+                <div id="pie"></div>
+            </div>
+        </div>
+        <hr style="color:gold;height:5px;" />
+
+        <div class="section">
+            <div class="big-section1" id="output" style="float:right; margin-right:20rem;margin-top:5rem">
+                
+
+            </div>
+
+            <div class="small-section2" style="margin-top:5rem">
+                <h2 class="myimage">Salaries</h2>
+                <p >in last three years</p>
+
+            </div>
+                
+                  
+                
+        </div>
+        
+        
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+﻿
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+p {
+    font-style:italic;
+}
+#header {
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 30px;
+    background-image: url('../images/background/bg1.jpg');
+    width: 100vw;
+    height: 80vh;
+}
+
+h1 {
+    font-size: 15rem;
+    font-family: 'Anton', sansserif;
+    background-image: linear-gradient(to right, gold, gold, yellow, white, yellow, gold, gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: brown;
+    padding: 9vw 2vw 0vw 2vw;
+    text-align: center;
+    font-size: 8vw;
+}
+
+#content {
+    background-image: url('../images/background/bg3.jpg');
+    width: 100vw;
+    height: auto;
+    background-attachment: fixed;
+}
+
+.myimage {
+    color: rgba(255, 185, 0, 0.8);
+    font-size: 5rem;
+    padding: 0px;
+    font-family: fantasy;
+}
+
+.big-section1 {
+    float: left;
+    width: 40vw;
+    align-items: center;
+    height: 500px;
+    display: block;
+    margin-left: 13rem;
+}
+
+.big-section2 {
+    width: 50vw;
+    align-items: center;
+    height: 400px;
+    display: block;
+    overflow: auto;
+}
+
+.small-section1 {
+    float: right;
+    width: 25vw;
+    margin-top: 5rem;
+    border: 2px solid yellow;
+    text-align: center;
+    margin-right: 20vw;
+    background-color: rgba(0,0,255,0.5);
+}
+
+.small-section2 {
+    float: left;
+    width: 20%;
+    border: 2px solid yellow;
+    margin-right: 8rem;
+    text-align: center;
+    margin-left: 13rem;
+    background-color: rgba(0,0,255,0.5);
+}
+
+.section {
+    /* Blue background color */
+    color: #fff; /* White text color */
+
+
+    text-align: center;
+    width: 100vw; /* Adjust as needed */
+    height: 50vh;
+    align-items: center;
+}
+
+    .section img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+
+table, td, th {
+    border: 1px solid white;
+}
+
+
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    background-color: navy;
+    color: yellow;
+    text-align: center;
+}
+
+tr {
+    background-color: white;
+    color: navy;
+}
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+

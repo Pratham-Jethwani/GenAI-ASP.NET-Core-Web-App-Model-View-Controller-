@@ -1,0 +1,72 @@
+﻿/* Your existing CSS styles */
+body {
+    background-image: url('../images/background/bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+h2 {
+    font-size: 15rem;
+    font-family: 'Anton', sans-serif;
+    background-image: linear-gradient(to right, gold, gold, yellow, white, yellow, gold, gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 5vw 2vw 0vw 2vw; /* Adjusted padding for better responsiveness */
+    text-align: center;
+}
+
+a {
+    color: burlywood;
+}
+
+p {
+    font-family: 'Cambria Math';
+    color: yellow;
+    font-size: 3vw; /* Adjusted font size for better responsiveness */
+    text-align: center;
+}
+
+article {
+    margin-bottom: 5vh; /* Adjusted margin for better spacing */
+}
+
+    article > header {
+        font-family: 'Anton', sans-serif;
+        background-image: linear-gradient(to right, brown, brown, brown, yellow, white, yellow, brown, brown, brown);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding: 5% 2% 0% 2%; /* Adjusted padding for better responsiveness */
+        text-align: center;
+        font-size: 4vw; /* Adjusted font size for better responsiveness */
+    }
+
+section > div {
+    height: 25vh;
+    box-shadow: 7px 7px lightyellow;
+    border: 1px solid bisque;
+    color: white;
+    width: 15vw;
+    margin: 1.5vw;
+    background-color: #100c3c70;
+}
+
+    section > div > header {
+        font-family: cursive;
+        text-align: center;
+        font-size: 2.5vw; /* Adjusted font size for better responsiveness */
+        color: gold;
+    }
+
+/* Media queries for responsiveness */
+@media (max-width: 767px) {
+    section > div {
+        width: 80%; /* Adjusted width for smaller screens */
+        margin: 1.5vw auto; /* Centered the divs */
+    }
+
+    article > header {
+        font-size: 6vw; /* Adjusted font size for smaller screens */
+    }
+}

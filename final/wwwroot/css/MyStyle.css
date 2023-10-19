@@ -1,0 +1,251 @@
+﻿
+*{
+    margin:0px;
+    padding:0px;
+}
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+.pb-3{
+    padding-bottom:0rem!important;
+}
+a {
+    color: grey;
+}
+/* Define global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+    .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+
+/* Video background styles */
+.video-background {
+    background-color: rgba(1,1,1,0.4);
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100vw;
+}
+
+    .content p {
+        font-family: 'Montserrat', sans-serif;
+        fontsize: 2vw;
+        text-align: center
+    }
+
+.p-bottom {
+    font-style: italic;
+    fontsize: 2vw;
+    text-align: center
+}
+
+.main_heading {
+    font-family: 'Anton', sansserif;
+    background-image: linear-gradient(to right, brown, brown, yellow, white, yellow, brown, brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: brown;
+    padding: 9vw 2vw 0vw 2vw;
+    text-align: center;
+    font-size: 8vw;
+}
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 30px;
+    margin-bottom: 30px; 
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .cta-button:hover {
+        background-color: #ff451a;
+    }
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+.container-2 {
+    position: relative;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background/bg2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Create the static background */
+.background-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background/bg2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Create the content container */
+.content-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/background/bg2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    height: 100%;
+    
+}
+
+
+
+
+
+
+
+/* Style the left block containing text */
+.left-block {
+    flex: 1;
+    padding: 20px;
+    width: 49vw;
+}
+
+    .left-block h1 {
+        /* font-family: ; */
+        color: goldenrod;
+    }
+
+    .left-block p {
+        color: #f0f0f0;
+    }
+
+/* Style the right block containing images */
+.right-block {
+    flex: 1;
+    display: flex;
+    width: 49vw;
+    /* justify-content: space-between; */
+}
+
+    /* Style the images in the right block */
+    .right-block img {
+        max-width: 50%; /* Adjust the width as needed */
+        height: auto;
+        padding: 2vw;
+    }
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-left, .navbar-right {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .navbar-right {
+        order: -1;
+    }
+
+    .video-background {
+        height: 60vh;
+    }
+}
+
+
+
+.container {
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens (e.g., mobile devices) */
+
+    .main_heading {
+        font-size: 5vw; /* Adjust the font size for smaller screens */
+    }
+
+    .content p {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+
+    .p-bottom {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+
+    .right-block img {
+        max-width: 100%; /* Adjust image width for smaller screens */
+    }

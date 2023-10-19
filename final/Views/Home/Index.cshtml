@@ -1,0 +1,155 @@
+﻿@{
+    <title>@ViewData["Title"] - final</title>
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Homepage</title>
+    <link rel="stylesheet" href="~/css/MyStyle.css"> 
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="~/videos/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1 class="main_heading">Generative AI Technology</h1>
+            <p>Any time an AI technology is generating something on its <br> own, it can be referred to as "generative AI." This umbrella <br> term includes learning algorithms that make predictions <br> as well as those that can use prompts to autonomously <br> write articles and paint pictures. </p>
+            <p class="p-bottom">Techopedia</p>
+        </div>
+    </div>
+
+    <div class="container-2">
+
+        <div class="content-2" style="border-bottom:5px solid rgb(242, 249, 55,0.3)">
+
+            <div class="left-block">
+                <h1>GenAI Tools</h1>
+                <p>
+                    Generative AI tools refer to software or systems that use neural network techniques to
+                    process and comprehend input data, subsequently producing meaningful responses.
+                    Scribehow <button onclick="submit1()">Read More</button>
+                    
+                </p>
+            </div>
+            <div class="right-block">
+                <img src="~/images/genai/bard_thumbnail.jpg" alt="Image 1">
+                <img src="~/images/genai/midjourney_thumbnail.jpg" alt="Image 2">
+            </div>
+        </div>
+
+        <div class="content-2" style="border-bottom:5px solid rgb(242, 249, 55,0.3)">
+            <div class="right-block">
+                <img src="~/images/genai/ms_thumbnail.jpg" alt="Image 1">
+                <img src="~/images/genai/google_thumbnail.jpg" alt="Image 2">
+            </div>
+            <div class="left-block">
+                <h1>GenAI Organisations</h1>
+                <p>
+                    Generative AI Organizations like Microsoft, Google, Amazon and IBM have invested hundreds of millions of dollars and massive compute power to build the foundational models on which services like ChatGPT and others depend.
+                    Gartner <button onclick="submit2()">Read More</button>
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+        
+        
+
+        <div class="content-2" style="border-bottom:5px solid rgb(242, 249, 55,0.3);">
+            <div class="left-block">
+                <h1>GenAI Applications</h1>
+                <p>
+                    Text: GPT-3, LaMDA, LLaMA, BLOOM and GPT-4.
+                    Code: OpenAI Codex.
+                    Images: DALL-E, Midjourney and Stable Diffusion.
+                    Video: Make-A-Video (Meta Platforms).
+                    Wikipedia <button onclick="submit3()">Read More</button>
+                </p>
+            </div>
+            <div class="right-block">
+                <img src="~/images/genaisites/chatgpt.jpg" alt="Image 1">
+                <img src="~/images/genaisites/dalle.jpg" alt="Image 2">
+            </div>
+        </div>
+
+
+        <div class="content-2" style="border-bottom:5px solid rgb(242, 249, 55,0.3)">
+            <div class="right-block">
+                <img src="~/images/genaisites/pie.jpg" alt="Image 1">
+                <img src="~/images/genaisites/job.jpg" alt="Image 2">
+            </div>
+            <div class="left-block">
+                <h1>GenAI Jobs</h1>
+                <p>
+                    The prime source for jobs and talents in AI, ML, Data Science and Big Data: <a href="https://ai-jobs.net/">Insights AI-Jobs</a>
+                   Python source for tables and charts: <a href="https://www.kaggle.com/code/sowrabhghosh/data-science-salary-2020-22-analysis">Kaggle</a>
+                    <br /><button onclick="submit4()">Read More</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="content-2" id="1">
+            <div style="text-align:center;width:100vw;">
+                <h1 style="font-size:70px;color:goldenrod;font-family: 'Anton', sansserif;">List Of Generative AI Websites</h1>
+                <p style="font-style:italic; font-size:16px; color:white">
+                    @{
+                        if (User.Identity.IsAuthenticated)
+                        {
+                                <a href="~/GenAIs/Create">Click here to add a new website</a>
+                        }
+                        else
+                        {
+                                <text>
+                                    Please <a href="~/Identity/Account/Login">Login</a> or <a href="~/Identity/Account/Register">Register</a> to add new generative AI websites.
+                                </text>
+                        }
+                    }
+                </p>
+            </div>
+        </div>
+        
+
+
+    <script>
+        function submit1() {
+            var newURL1 = "/Home/GenAI#section1";
+            window.location.href = newURL1;
+        }
+
+
+        function submit2(){
+            console.log('clicked');
+            var newURL2 = "/Home/GenAI/section#section2";
+            window.location.href = newURL2;
+
+        }
+        function submit3() {
+            var newURL3 = "/Home/GenAI/section#section3";
+            window.location.href = newURL3;
+
+        }
+
+        function submit4() {
+            var newURL4 = "/Home/jobs";
+            window.location.href = newURL4;
+        }
+
+       
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    
+   
+</body>
+</html>
+
+

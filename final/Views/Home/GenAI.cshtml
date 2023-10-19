@@ -1,0 +1,339 @@
+﻿@{
+    <title>@ViewData["Title"] - final</title>
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+<link rel="stylesheet" href="~/css/GenAICSS.css">
+<link rel="stylesheet" href="~/css/GenAICSS2.css">
+<body>
+    <section id="section1" style="text-align:center;">
+        <h1>GenAI Tools</h1>
+        <div class="photos">
+            <!-- Image 1 -->
+            <div class="image-container">
+                <img id="tools1" src="~/images/genaisites/chatgpt.jpg" alt="Photo 1">
+                <!-- Add "More Details" button as part of the image-container -->
+                <button class="popup-button" id="detailsButton1" onclick="showDetails('details1')">More Details</button>
+                <!-- Add a popup div for the image -->
+
+                <div class="div-below-section" id="details1" style="background-color:black">
+                    <span class="close-button" onclick="hideDetails('details1')">X</span>
+                    <div class="left-section" style="display: flex; justify-content: center; align-items: center;padding-top:10px;">
+                        <img style="width: 20vw;height:30vh;" src="~/images/genai/chatgpt_large.jpg" alt="ChatGPT Large Image">
+                    </div>
+                    <div class="right-section">
+                        <h1 style="font-size:3rem;text-align:start;color:yellow;">ChatGPT</h1>
+                        <hr style="background-color: yellow;">
+                        <p>ChatGPT is a large language model-based chatbot developed by OpenAI and launched on November 30, 2022, notable for enabling users to refine and steer a conversation towards a desired length, format, style, level of detail, and language used. (Wikipedia)</p>
+                        <a href="https://chat.openai.com/">Visit Website</a>
+                        <div>
+                            <img src="~/images/genaisites/chatgpt.jpg" alt="ChatGPT Image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Image 2 -->
+            <div class="image-container">
+                <img id="tools2" src="~/images/genaisites/bard.jpg" alt="Photo 2">
+                <!-- Add "More Details" button as part of the image-container -->
+                <button class="popup-button" id="detailsButton2" onclick="showDetails('details2')">More Details</button>
+                <!-- Add a popup div for the image -->
+                <div class="div-below-section" id="details2" style="background-color:black">
+                    <span class="close-button" onclick="hideDetails('details2')">X</span>
+                    <div class="left-section" style="display: flex; justify-content: center; align-items: center;padding-top:10px;">
+                        <img style="width: 20vw;height:30vh;" src="~/images/genai/bard_large.jpg" alt="Bard Large Image">
+                    </div>
+                    <div class="right-section">
+                        <h1 style="font-size:5rem;">Google Bard</h1>
+                        <hr style="background-color: yellow;">
+                        <p> Bard is a conversational generative artificial intelligence chatbot developed by Google, based initially on the LaMDA family of large language models and later the PaLM LLM.  (Wikipedia)</p>
+                        <a href="https://bard.google.com/chat">Visit Website</a>
+                        <div>
+                            <img src="~/images/genaisites/bard.jpg" alt="Bard Image">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Image 3 -->
+            <div class="image-container">
+                <img id="tools3" src="~/images/genaisites/midjourney.jpg" alt="Photo 3">
+                <!-- Add "More Details" button as part of the image-container -->
+                <button class="popup-button" id="detailsButton3" onclick="showDetails('details3')">More Details</button>
+                <!-- Add a popup div for the image -->
+                <div class="div-below-section" id="details3" style="background-color:black">
+                    <span class="close-button" onclick="hideDetails('details3')">X</span>
+                    <div class="left-section" style="display: flex; justify-content: center; align-items: center;padding-top:10px;">
+                        <img style="width: 20vw;height:30vh;" src="~/images/genai/midjourney_large.jpg" alt="midjourney Large Image">
+                    </div>
+                    <div class="right-section">
+                        <h1 style="font-size:5rem;">Midjourney</h1>
+                        <hr style="background-color: yellow;">
+                        <p>Midjourney is a generative artificial intelligence program and service created and hosted by San Francisco-based independent research lab Midjourney, Inc. (Wikipedia)</p>
+                        <a href="https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F">Visit Website</a>
+                        <div>
+                            <img src="~/images/genaisites/midjourney.jpg" alt="MIDJOURNEY Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="image-container">
+                <img id="tools4" src="~/images/genaisites/dalle.jpg" alt="Photo 4">
+                <!-- Add "More Details" button as part of the image-container -->
+                <button class="popup-button" id="detailsButton4" onclick="showDetails('details4')">More Details</button>
+                <!-- Add a popup div for the image -->
+                <div class="div-below-section" id="details4" style="background-color:black">
+                    <span class="close-button" onclick="hideDetails('details4')">X</span>
+                    <div class="left-section" style="display: flex; justify-content: center; align-items: center;padding-top:10px;">
+                        <img style="width: 20vw;height:30vh;" src="~/images/genai/dalle_large.jpg" alt="DALL-E Large Image">
+                    </div>
+                    <div class="right-section">
+                        <h1 style="font-size:5rem;">DALL-E</h1>
+                        <hr style="background-color: yellow;">
+                        <p>DALL-E and DALL-E 2 are text-to-image models developed by OpenAI using deep learning methodologies to generate digital images from natural language descriptions, called prompts (Wikipedia)</p>
+                        <a href="https://openai.com/dall-e-2">Visit Website</a>
+                        <div>
+                            <img src="~/images/genaisites/dalle.jpg" alt="DALL-E Image">
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="section2" style="text-align:center;">
+        <h1>GenAI Organisations</h1>
+        <div class="photos">
+            <!-- Image 1 -->
+            <div class="image-container">
+                <img id="tools5" src="~/images/genaisites/microsoft.jpg" alt="Photo 5">
+                <!-- Add "More Details" button as part of the image-container -->
+                <button class="popup-button" id="detailsButton5" onclick="showDetails('details5')">More Details</button>
+                <!-- Add a popup div for the image -->
+
+                <div class="div-below-section" id="details5" style="background-color:black">
+                    <span class="close-button" onclick="hideDetails('details5')">X</span>
+                    <div class="left-section" style="display: flex; justify-content: center; align-items: center;padding-top:10px;">
+                        <img style="width: 20vw;height:30vh;" src="~/images/genai/ms_large.jpg" alt="microsoft Large Image">
+                    </div>
+                    <div class="right-section">
+                        <h1 style="font-size:5rem;">Microsoft</h1>
+                        <hr style="background-color: yellow;">
+                        <p>Microsoft Corporation is an American multinational technology corporation headquartered in Redmond, Washington. Microsofts best-known software products are the Windows line of operating systems, the Microsoft 365 suite of productivity applications, and the Internet Explorer and Edge web browsers. (Wikipedia)</p>
+                        <a href="https://www.microsoft.com/en-in">Visit Website</a>
+                        <div>
+                            <img src="~/images/genaisites/microsoft.jpg" alt="microsoft Image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Image 2 -->
+            <div class="image-container">
+                <img id="tools6" src="~/images/genaisites/google.jpg" alt="Photo 6">
+                <!-- Add "More Details" button as part of the image-container -->
+                <button class="popup-button" id="detailsButton6" onclick="showDetails('details6')">More Details</button>
+                <!-- Add a popup div for the image -->
+                <div class="div-below-section" id="details6" style="background-color:black">
+                    <span class="close-button" onclick="hideDetails('details6')">X</span>
+                    <div class="left-section" style="display: flex; justify-content: center; align-items: center;padding-top:10px;">
+                        <img style="width: 20vw;height:30vh;" src="~/images/genai/google_large.jpg" alt="google Large Image">
+                    </div>
+                    <div class="right-section">
+                        <h1 style="font-size:5rem;">Google</h1>
+                        <hr style="background-color: yellow;">
+                        <p> Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics. (Wikipedia)</p>
+                        <a href="https://www.google.com/">Visit Website</a>
+                        <div>
+                            <img src="~/images/genaisites/google.jpg" alt="google Image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Image 3 -->
+            <div class="image-container">
+                <img id="tools7" src="~/images/genaisites/ibm_thumbnail.jpg" alt="Photo 7">
+                <!-- Add "More Details" button as part of the image-container -->
+                <button class="popup-button" id="detailsButton7" onclick="showDetails('details7')">More Details</button>
+                <!-- Add a popup div for the image -->
+                <div class="div-below-section" id="details7" style="background-color:black">
+                    <span class="close-button" onclick="hideDetails('details7')">X</span>
+                    <div class="left-section" style="display: flex; justify-content: center; align-items: center;padding-top:10px;">
+                        <img style="width: 20vw;height:30vh;" src="~/images/genai/ibm_large.jpg" alt="ibm Large Image">
+                    </div>
+                    <div class="right-section">
+                        <h1 style="font-size:5rem;">IBM</h1>
+                        <hr style="background-color: yellow;">
+                        <p>The International Business Machines Corporation, nicknamed Big Blue, is an American multinational technology corporation headquartered in Armonk, New York and is present in over 175 countries. (Wikipedia)</p>
+                        <a href="https://www.ibm.com/in-en">Visit Website</a>
+                        <div>
+                            <img src="~/images/genaisites/ibm_thumbnail.jpg" alt="IBM Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="image-container">
+                <img id="tools8" src="~/images/genaisites/amazon_thumbnail.jpg" alt="Photo 8">
+                <!-- Add "More Details" button as part of the image-container -->
+                <button class="popup-button" id="detailsButton8" onclick="showDetails('details8')">More Details</button>
+                <!-- Add a popup div for the image -->
+                <div class="div-below-section" id="details8" style="background-color:black">
+                    <span class="close-button" onclick="hideDetails('details8')">X</span>
+                    <div class="left-section" style="display: flex; justify-content: center; align-items: center;padding-top:10px;">
+                        <img style="width: 20vw;height:30vh;" src="~/images/genai/amazon_large.jpg" alt="Amazon Large Image">
+                    </div>
+                    <div class="right-section">
+                        <h1 style="font-size:5rem;">Amazon</h1>
+                        <hr style="background-color: yellow;">
+                        <p>Amazon.com, Inc. is an American multinational technology company focusing on e-commerce, cloud computing, online advertising, digital streaming, and artificial intelligence. (Wikipedia)</p>
+                        <a href="https://www.amazon.in/">Visit Website</a>
+                        <div>
+                            <img src="~/images/genaisites/amazon_thumbnail.jpg" alt="Amazon Image">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="section3" style="text-align:center;">
+        <h1>GenAI Applications</h1>
+        <div class="photos">
+            <!-- Image 1 -->
+            <div class="image-container">
+                <img id="tools9" src="~/images/genaisites/chatgpt.jpg" alt="Photo 9">
+                <!-- Add "More Details" button as part of the image-container -->
+                <button class="popup-button" id="detailsButton9" onclick="showDetails('details9')">More Details</button>
+                <!-- Add a popup div for the image -->
+
+                <div class="div-below-section" id="details9" style="background-color:black">
+                    <span class="close-button" onclick="hideDetails('details9')">X</span>
+                    <div class="left-section" style="display: flex; justify-content: center; align-items: center;padding-top:10px;">
+                        <img style="width: 20vw;height:30vh;" src="~/images/genai/chatgpt_large.jpg" alt="microsoft Large Image">
+                    </div>
+                    <div class="right-section">
+                        <h1 style="font-size:5rem;">ChatGPT</h1>
+                        <hr style="background-color: yellow;">
+                        <p>ChatGPT is a large language model-based chatbot developed by OpenAI and launched on November 30, 2022, notable for enabling users to refine and steer a conversation towards a desired length, format, style, level of detail, and language used. (Wikipedia)</p>
+                        <a href="https://chat.openai.com/">Visit Website</a>
+                        <div>
+                            <img src="~/images/genaisites/chatgpt.jpg" alt="chatgpt Image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Image 2 -->
+            <div class="image-container">
+                <img id="tools10" src="~/images/genaisites/githubcopilot_thumbnail.jpg" alt="Photo 10">
+                <!-- Add "More Details" button as part of the image-container -->
+                <button class="popup-button" id="detailsButton10" onclick="showDetails('details10')">More Details</button>
+                <!-- Add a popup div for the image -->
+                <div class="div-below-section" id="details10" style="background-color:black">
+                    <span class="close-button" onclick="hideDetails('details10')">X</span>
+                    <div class="left-section" style="display: flex; justify-content: center; align-items: center;padding-top:10px;">
+                        <img style="width: 20vw;height:30vh;" src="~/images/genai/githubcopilot_large.jpg" alt="copilot Large Image">
+                    </div>
+                    <div class="right-section">
+                        <h1 style="font-size:5rem;">GitHub Copilot</h1>
+                        <hr style="background-color: yellow;">
+                        <p>GitHub Copilot is a cloud-based artificial intelligence tool developed by GitHub and OpenAI to assist users of Visual Studio Code, Visual Studio, Neovim, and JetBrains integrated development environments by autocompleting code. (Wikipedia)</p>
+                        <a href="https://github.com/features/copilot">Visit Website</a>
+                        <div>
+                            <img src="~/images/genaisites/githubcopilot_thumbnail.jpg" alt="githubcopilot Image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Image 3 -->
+            <div class="image-container">
+                <img id="tools11" src="~/images/genaisites/dalle.jpg" alt="Photo 11">
+                <!-- Add "More Details" button as part of the image-container -->
+                <button class="popup-button" id="detailsButton11" onclick="showDetails('details11')">More Details</button>
+                <!-- Add a popup div for the image -->
+                <div class="div-below-section" id="details11" style="background-color:black">
+                    <span class="close-button" onclick="hideDetails('details11')">X</span>
+                    <div class="left-section" style="display: flex; justify-content: center; align-items: center;padding-top:10px;">
+                        <img style="width: 20vw;height:30vh;" src="~/images/genai/dalle_large.jpg" alt="ibm Large Image">
+                    </div>
+                    <div class="right-section">
+                        <h1 style="font-size:5rem;">DALL-E</h1>
+                        <hr style="background-color: yellow;">
+                        <p>DALL-E and DALL-E 2 are text-to-image models developed by OpenAI using deep learning methodologies to generate digital images from natural language descriptions, called "prompts". DALL-E was revealed by OpenAI in a blog post in January 2021, and uses a version of GPT-3 modified to generate images. (Wikipedia)</p>
+                        <a href="https://openai.com/dall-e-2">Visit Website</a>
+                        <div>
+                            <img src="~/images/genaisites/dalle_thumbnail.jpg" alt="DALL-E Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="image-container">
+                <img id="tools12" src="~/images/genaisites/synthesia_thumbnail.jpg" alt="Photo 12">
+                <!-- Add "More Details" button as part of the image-container -->
+                <button class="popup-button" id="detailsButton12" onclick="showDetails('details12')">More Details</button>
+                <!-- Add a popup div for the image -->
+                <div class="div-below-section" id="details12" style="background-color:black">
+                    <span class="close-button" onclick="hideDetails('details12')">X</span>
+                    <div class="left-section" style="display: flex; justify-content: center; align-items: center;padding-top:10px;">
+                        <img style="width: 20vw;height:30vh;" src="~/images/genai/synthesia_large.jpg" alt="synthesia Large Image">
+                    </div>
+                    <div class="right-section">
+                        <h1 style="font-size:5rem;">Video:synthesia</h1>
+                        <hr style="background-color: yellow;">
+                        <p>Synthesia is a synthetic media generation platform used to create AI generated video content. Based in London, England, it counts among its users businesses including Amazon, Tiffany & Co. and IHG Hotels & Resorts. (Wikipedia)</p>
+                        <a href="https://openai.com/dall-e-2">Visit Website</a>
+                        <div>
+                            <img src="~/images/genaisites/synthesia_thumbnail.jpg" alt="Synthesia Image">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Other sections and images go here -->
+    <!-- JavaScript to handle popup visibility -->
+    <script>
+        // Function to show more details below the section
+        function showDetails(detailsId) {
+            var details = document.getElementById(detailsId);
+            details.style.display = "block";
+        }
+
+        // Function to hide details
+        function hideDetails(detailsId) {
+            var details = document.getElementById(detailsId);
+            details.style.display = "none";
+        }
+    </script>
+</body>
+</html>

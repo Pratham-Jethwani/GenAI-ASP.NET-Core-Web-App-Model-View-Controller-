@@ -1,0 +1,67 @@
+﻿    @model final.Models.GenAI
+
+    @{
+        ViewData["Title"] = "Create";
+    }
+
+    <style>
+        body {
+            background-image: url('../../wwwroot/images/background/bg2.jpg');
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #bottom-left-link {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+    <body>
+
+        <h1 style="text-align: center; color: white;">Create GenAI</h1>
+
+        <hr />
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <!-- Specify the controller and action for form submission -->
+                <form asp-controller="GenAIs" asp-action="Create" enctype="multipart/form-data" method="post" onsubmit="t1() ">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="form-group">
+                        <label asp-for="GenAIName" class="control-label"></label>
+                        <input asp-for="GenAIName" class="form-control" />
+                        <span asp-validation-for="GenAIName" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Summary" class="control-label"></label>
+                        <input asp-for="Summary" class="form-control" />
+                        <span asp-validation-for="Summary" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="ImageFile" class="control-label"></label>
+                        <input type="file" id="ImageFile" name="ImageFile" class="form-control" />
+                        <span asp-validation-for="ImageFile" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div>
+            <a href="/Home/Index/#1">Go to Home</a>
+        </div>
+    </body>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
